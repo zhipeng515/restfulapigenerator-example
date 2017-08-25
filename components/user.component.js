@@ -9,7 +9,7 @@ module.exports = {
     db: mainDB,
     Schema: {
         nickname    : { type: String, required: true, trim: true, joi: Joi.string() },
-        phone       : { type: Number, required: false, joi: Joi.number() },
+        phone       : { type: String, required: false, trim: true, joi: Joi.string() },
         sns         : { type: String, required: true, trim: true, joi: Joi.string() },
         snsid       : { type: String, required: true, trim: true, joi: Joi.string() },
         avatar      : { type: String, required: true, trim: true, joi: Joi.string() }
